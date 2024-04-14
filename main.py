@@ -10,6 +10,13 @@ def encode(dec_password):
     encoded_password = "".join(map(str, password_list))
     return encoded_password
 
+def decode(password):
+    decoded_password = ""
+    for digit in password:
+        decoded_digit = str((int(digit) - 3) % 10)
+        decoded_password += decoded_digit
+    return decoded_password
+
 
 def menu():
     print("Menu\n-------------\n1. Encode\n2. Decode\n3. Quit\n ")
