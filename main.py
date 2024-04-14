@@ -1,3 +1,4 @@
+#Zachary Kremkau and Jackson Holloway
 def encode(dec_password):
     dec_password_list = []
     password_list = []
